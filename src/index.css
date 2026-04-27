@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+  button {
+    @apply select-none;
+  }
+}
+
+@layer utilities {
+  .scroll-smooth-anchor {
+    scroll-margin-top: 7.5rem;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes hikaFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes hikaSlideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.hika-overlay {
+  animation: hikaFadeIn 180ms ease-out;
+}
+.hika-sheet {
+  animation: hikaSlideUp 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}

@@ -1,0 +1,23 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Large local design source (not used by the build)
+Hika-Menu.pdf
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Claude Code local settings
+.claude/settings.local.json
