@@ -13,7 +13,7 @@ Mobile-first multilingual menu for **嗨咖驛站 Hika**, a coastal restaurant i
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173/hika-menu/
+npm run dev      # http://localhost:5173/
 npm run build    # builds into dist/
 npm run preview  # serves the production build locally
 ```
@@ -29,9 +29,9 @@ Dish photos go in `public/images/`. The filename must match the `image` field on
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages. The Vite `base` is set to `/hika-menu/`; change it in `vite.config.ts` if the repo is renamed or you switch to a custom domain.
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages. The site is served from the custom domain configured in `public/CNAME` (currently `hika.gigahertz.us`). The Vite `base` is `/` so assets load from the domain root — change it in `vite.config.ts` if you ever serve the site from a sub-path again.
 
-In the GitHub repository settings, under **Settings → Pages**, set **Source** to **GitHub Actions**.
+In the GitHub repository settings, under **Settings → Pages**, set **Source** to **GitHub Actions** and **Custom domain** to the value in `public/CNAME`.
 
 ## Project structure
 
