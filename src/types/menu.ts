@@ -9,7 +9,7 @@ export type Category =
   | 'friedfood'
   | 'limited'
 
-export type TagCode = 'R' | '1' | '2' | '3' | 'P' | 'B' | 'L' | 'V' | 'H'
+export type TagCode = 'R' | '1' | '2' | '3' | 'P' | 'B' | 'L' | 'V' | 'A' | 'H'
 
 export type LangText = Record<Lang, string>
 

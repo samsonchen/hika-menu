@@ -65,6 +65,13 @@ export const TAGS: Record<TagCode, TagDef> = {
     bgClass: 'bg-veg-bg',
     textClass: 'text-veg-text',
   },
+  A: {
+    code: 'A',
+    icon: '🧄',
+    label: { zh: '五辛素', en: 'Veg w/ Alliums', ja: '五葷入精進', ko: '오신채 채식' },
+    bgClass: 'bg-veg-bg',
+    textClass: 'text-veg-text',
+  },
   H: {
     code: 'H',
     icon: '☪️',

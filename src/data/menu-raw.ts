@@ -56,9 +56,9 @@ export const menuRaw: MenuRawItem[] = [
   { category: 'soup', name: '東岸綜合鮮魚湯', options: ['大 380', '小 280'], tags: [], image: 'fishSoup.jpg', emoji: '🍲', note: '' },
 
   // ── 蔬菜類 ────────────────────────────────────────────────────
-  { category: 'vegetable', name: '野菜拼盤 (冷)', options: ['280'], tags: ['V'], image: 'wildVeg.jpg', emoji: '🥗', note: '' },
+  { category: 'vegetable', name: '野菜拼盤 (冷)', options: ['280'], tags: [], image: 'wildVeg.jpg', emoji: '🥗', note: '' },
   { category: 'vegetable', name: '涼筍沙拉 (冷)', options: ['150'], tags: ['V'], image: 'bambooSalad.jpg', emoji: '🎋', note: '' },
-  { category: 'vegetable', name: '季節時蔬', options: ['時價'], tags: ['V'], image: 'seasonalVeg.jpg', emoji: '🥬', note: '' },
+  { category: 'vegetable', name: '季節時蔬', options: ['時價'], tags: ['A'], image: 'seasonalVeg.jpg', emoji: '🥬', note: '' },
 
   // ── 下飯類 ────────────────────────────────────────────────────
   { category: 'ricedish', name: '野筍五花肉', options: ['260'], tags: ['P'], image: 'bambooPork.jpg', emoji: '🥓', note: '' },
@@ -72,5 +72,6 @@ export const menuRaw: MenuRawItem[] = [
   { category: 'friedfood', name: '椒鹽小卷', options: ['380'], tags: ['1'], image: 'babySquid.jpg', emoji: '🦑', note: '' },
 
   // ── 每日限量 ──────────────────────────────────────────────────
-  { category: 'limited', name: '野生龍蝦', options: ['時價'], tags: ['R'], image: 'lobster.jpg', emoji: '🦞', note: '今日限量 — 數量有限，售完為止。' },
+  { category: 'limited', name: '原味野生龍蝦', options: ['時價'], tags: ['R'], image: 'lobster.jpg', emoji: '🦞', note: '今日限量 — 數量有限，售完為止。' },
+  { category: 'limited', name: '蒜蓉野生龍蝦', options: ['時價'], tags: ['R'], image: 'lobsterGarlic.jpg', emoji: '🦞', note: '今日限量 — 數量有限，售完為止。' },
 ]
